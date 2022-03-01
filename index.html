@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">;
+    <link id="style" rel="stylesheet" href="light.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1 class="main-title"></h1>
+    <header id="header">
+        <h1 id="main-title" class="main-title"></h1>
+        <nav id="nav-menu" class="nav-menu"></nav>
     </header>
-    <div class="page-content">
+    <div id="page-container" class="page-container">
 
     </div>
-    <footer>
-        <div class="link-container"></div>
+    <footer id="footer">
+        <div id="link-container" class="link-container"></div>
     </footer>
 </body>
 <script src="./script.js"></script>
+<script>
+    initWebsite();
+</script>
 </html>
+
+<!-- 
+1) Cambiare il title nel head
+2) Cambiare h1 nel Header
+3) Impostare background image nel Header
+4) Generare i footer link
+5) Cambiare il tema
+6) Generare i contenuti del page-content 
+-->
