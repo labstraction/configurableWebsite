@@ -63,6 +63,7 @@
         "content": [
             {
                 "tag": "h2",
+                "style": "background-color: red",                                        
                 "text": "Pasticera demente"
             },
             {

@@ -51,7 +51,7 @@ function setFooterLinks(linkArray){
 }
 
 function loadPages() {
-    fetch("./assets/settings/pages.json")
+    fetch("./assets/settings/pages_new.json")
     .then(res => res.json())
     .then(configurePages);
 }
