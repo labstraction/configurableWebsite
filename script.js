@@ -51,7 +51,7 @@ function setFooterLinks(linkArray){
 }
 
 function loadPages() {
-    fetch("./assets/settings/pages_new.json")
+    fetch("./assets/settings/pages_new_new.json")
     .then(res => res.json())
     .then(configurePages);
 }
@@ -72,10 +72,13 @@ function configurePages(pageSetting) {
 
 function createPage(page){
     const container = document.getElementById('page-container');
-    for (const element of page.content) {
-        const htmlElement = createHtmlElement(element);
-        container.appendChild(htmlElement);
-    }
+    const html = marked.parse(page.content);
+    console.log(html);
+    container.innerHTML = html;
+    // for (const element of page.content) {
+    //     const htmlElement = createHtmlElement(element);
+    //     container.appendChild(htmlElement);
+    // }
 }
 
 
